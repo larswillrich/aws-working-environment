@@ -3,7 +3,7 @@ mkdir /root/.ssh
 if [ -d "/root/sshKeyMount" ]
 then
     cp -r /root/sshKeyMount/. /root/.ssh
-    chmod 600 /root/.ssh/id_rsa
+    chmod -R 400 /root/.ssh/
     eval `ssh-agent -s`
     ssh-add /root/.ssh/id_rsa
     cd /root/dev
