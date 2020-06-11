@@ -1,0 +1,1 @@
+docker run -it -v C:/Users/lwillrich/.ssh:/root/sshKeyMount:ro -v C:\cygwin64\home\lwillrich\dev:/root/dev -v C:\cygwin64\home\lwillrich\dev\fish:/root/.local aws-working-environment
